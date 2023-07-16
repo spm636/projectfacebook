@@ -1,0 +1,647 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    font-size: 15px;
+}
+body{
+    background: #f0f2f5;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: white;
+    padding: 5px 2%;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    
+    
+}
+.nav-left{
+    display: flex;
+     align-items: center;
+    flex-basis: 30%;
+    
+}
+.logo{
+    width: 40px;
+    height: 40px;
+}
+.Search{
+   background:  #f0f2f5;
+   height: 40px;
+    border-radius: 20px;
+    margin: 5px;
+    width: 250px;
+    padding-left: 15px;
+    
+}
+.Search button{
+    border: none;
+    size: 20px;
+    cursor: pointer;
+}
+.Search input{
+    font-size: 15px;
+    height: 90%;
+    border: none;
+    background: #f0f2f5;
+}
+.nav-center{
+    display: flex;
+    align-items: center;
+    flex-basis: 47%;
+    justify-content: space-around;
+    
+}
+
+
+.nav-center a img{
+    width: 28px;
+    height: 28px;
+    cursor: pointer;
+    margin: 5px 30px;
+    
+}
+.nav-center-item:hover{
+    background: gainsboro;
+    border-radius: 10px;
+}
+.nav-center-hovr{
+    display: none;
+    
+}
+.nav-center-item:hover  .nav-center-hovr{
+    display: block;
+    position: absolute;
+    background: rgb(53, 50, 50);
+    margin-top: 5px;
+    color: white;
+    border-radius: 5px;
+}
+
+
+.nav-right{
+    display: flex;
+    align-items: center;
+    flex-basis: 20%;
+    justify-content: flex-end;
+    
+    
+}
+
+.nav-right-item a img{
+    margin: 5px;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background: gainsboro;
+    cursor: pointer;
+}
+.nav-right-item:hover{
+    background: gray;
+    border-radius: 20px;
+}
+.nav-right-hovr{
+    display: none;
+}
+.nav-right-item:hover .nav-right-hovr{
+    display: block;
+    position: absolute;
+    background: rgb(78, 77, 77);
+    margin-top: 5px;
+    color: white;
+    border-radius: 5px;
+}
+
+.container{
+    
+    display: flex;
+    justify-content: space-between;
+    padding: 13px 5%;
+}
+.left-side{
+    flex-basis: 25%;
+    position: sticky;
+    top: 70px;
+    align-self: flex-start;
+    
+    
+}
+.right-side{
+    flex-basis: 25%;
+    position: sticky;
+    top: 70px;
+    align-self: flex-start;
+    margin-left: 80px;
+    
+    padding-left: 30px;
+    
+}
+.main-content{
+    flex-basis: 47%;
+    
+
+}
+.left-links li , .left-Shortcut li,.Right-Shortcut li ,.Right-birthday li{
+    
+    list-style-type: none;
+    cursor: pointer;
+}
+.left-links li a, .left-Shortcut li a,.Right-birthday p {
+   
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    width: fit-content;
+}
+.left-links a img{
+    
+    height: 25px;
+    width: 25px;
+    margin-right: 15px;
+}
+.left-links li:hover{
+    background: gainsboro;
+}
+.left-Shortcut a img ,.Right-Shortcut li a img{
+    height: 40px;
+    width: 40px;
+    margin-right: 15px;
+    border-radius: 50%;
+}
+.left-Shortcut h3, .Right-Shortcut h3, .Right-birthday h3{
+    color: gray;
+    margin-bottom: 20px;
+}
+.left-Shortcut li:hover{
+    background: gainsboro;
+}
+.Right-Shortcut li a{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    width: fit-content;
+    cursor: pointer;
+
+}
+.inline li a{
+    margin-left: 30px;
+    font-size: 15px;
+    color: gray;
+
+}
+.inline li a img,.Right-birthday p img{
+    height: 30px;
+    width: 30px;
+    margin-right: 10px;
+}
+hr{
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+.contact{
+    display: flex;
+    justify-content: space-around;
+    color: gray;
+    margin-bottom: 30px;
+}
+.contact-person ul li{
+    list-style-type: none;
+}
+.contact-person li a{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    width: fit-content;
+    cursor: pointer;
+    
+}
+.contact-person li a img{
+    height: 25px;
+    width: 25px;
+    margin-right: 10px;
+    margin-left: 30px;
+    border-radius: 50%;
+}
+.contact-person li:hover{
+    background: gainsboro;
+    border-radius: 20px;
+}
+.Right-birthday li:hover{
+    background: gainsboro;
+    border-radius: 20px;
+}
+.Right-Shortcut li:hover{
+    background: gainsboro;
+    border-radius: 20px;
+}
+.left-Shortcut li:hover{
+    background: gainsboro;
+    border-radius: 20px;
+}
+.contact a:hover{
+    background: gainsboro;
+}
+.head-story{
+    
+    background: white;
+    
+    border-radius: 20px;
+    
+
+}
+.story-icon{
+    align-items: center;
+    display: flex;
+    flex-basis: 90%;
+    justify-content: space-between;
+
+}
+.story-icon a{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    width: fit-content;
+    margin: 15px 5%;
+    cursor: pointer;
+}
+.story-icon a:hover{
+    background: gainsboro;
+    border-radius: 10px;
+}
+
+.story-icon img{
+    margin-right: 10px;
+    width: 40px;
+    height: 40px;
+    
+}
+.story-image1{
+    display: flex;
+    justify-content: center;
+    flex-basis: 22%;
+    padding-top: 32%;
+    position: relative;
+    background-image: url(image/WhatsApp\ Image\ 2023-07-14\ at\ 10.21.25\ AM.jpeg);
+    background-size: contain;
+    border-radius: 10px;
+    margin: 10px;
+    cursor: pointer;
+    
+}
+.story-image1 :hover + .add-story {
+    display: block;
+    position: absolute;
+    
+
+}
+.add-story{
+    display: none;
+}
+.story-image2:hover img{
+    transform: scale(0.98);
+}
+.story-image2{
+    
+    justify-content: center;
+    flex-basis: 22%;
+    position: relative;
+    border-radius: 10px;
+    margin: 10px;
+    cursor: pointer;
+    transition: 0.5s all ease-in-out;
+}
+.story-image2 img{
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.story{
+    display: flex;
+    padding: 10px;
+}
+
+.search-photo{
+    background: white;
+    border-radius: 10px;
+}
+.main-search{
+    display: flex;
+    
+    
+    margin-top: 15px;
+    align-items: center;
+}
+.Search-btn{
+    display: flex;
+    align-items: center;
+     border-radius: 20px;
+     margin: 5px;
+     width: 100%;
+     padding-left: 15px;
+     border: 0;
+     background-color: transparent;
+     padding: 15px 5%;
+     
+}
+.Search-btn button{
+    border: 0;
+    background-color: transparent;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.Search-btn button img{
+    border-radius: 50%;
+    border: 1px solid;
+    border-color: gainsboro;
+    height: 50px;
+
+}
+.Search-btn input{
+    height: 50px;
+    width: 90%;
+    background:#f0f2f5 ;
+    border-radius: 20px;
+    border: 0;
+    cursor: pointer;
+}
+.Search-btn button:hover{
+    background: gainsboro;
+    border-radius: 50%;
+}
+.Search-btn input:hover{
+    background: gainsboro;
+}
+
+.photo-vedio{
+    align-items: center;
+    display: flex;
+    flex-basis: 90%;
+    justify-content: space-around;
+
+}
+.photo-vedio a{
+
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    width: fit-content;
+    margin: 10px 5%;
+    color: gray;
+    font-size: 15px;
+    cursor: pointer;
+    
+}
+.photo-vedio a:hover{
+background: gainsboro;
+border-radius: 10px;
+}
+.photo-vedio img{
+    margin-right: 10px;
+    width: 30px;
+    height: 30px;
+}
+.search-photo hr{
+    width: 90%;
+    margin-left: 20px;
+}
+.post-photo{
+    margin-top: 20px;
+    width: 100%;
+    height: 550px;
+    display: grid;
+    
+    background: white;
+    border-radius: 20px;
+}
+.phost-profile-pic{
+    display: grid;
+    grid-row: 1/2;
+    grid-column: 1/2;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    
+    
+}
+.phost-profile-pic img{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    
+}
+.phost-profile-name{
+    display: grid;
+    grid-column: 2/4;
+    grid-row: 1/2;
+    align-items: center;
+    margin-left: 10px;
+    cursor: pointer;
+
+}
+.phost-profile-name p{
+    font-size: 12px;
+    
+}
+.post-content{
+    display: grid;
+    grid-column: 4/6;
+    grid-row: 1/2;
+    
+}
+.phost-close-bar{
+    display: grid;
+    grid-column: 10/12;
+    grid-row: 1/2;
+    display: inline;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.phost-description{
+    display: grid;
+    grid-row: 2/3;
+    grid-column: 1/11;
+    margin: 15px;
+    font-size: 15px;
+}
+.phost-photo{
+    display: grid;
+    grid-row: 3/4;
+    grid-column: 1/11;
+    margin-left: 15px;
+    justify-content: center;
+    cursor: pointer;
+    
+}
+.phost-photo img{
+  height: 250px;
+  width: 450px;
+}
+.phost-like-details{
+    display: grid;
+    grid-row: 5/6;
+    grid-column: 1/11;
+    margin-left: 30px;
+    display: inline;
+    cursor: pointer;
+
+}
+.phost-like{
+    display: grid;
+    grid-row: 6/7;
+    grid-column: 1/4;
+    cursor: pointer;
+    justify-content: center;
+}
+.phost-comment{
+    display: grid;
+    grid-row: 6/7;
+    grid-column: 4/7;
+    cursor: pointer;
+    justify-content: center;
+
+}
+.phost-share{
+    display: grid;
+    grid-row: 6/7;
+    grid-column: 7/12;
+    cursor: pointer;
+    justify-content: center;
+}
+.phost-cooment-profile{
+    display: grid;
+    grid-row: 7/8;
+    grid-column: 1/12;
+    justify-content: center;
+}
+.Search-coment{
+    display: flex;
+    align-items: center;
+     border-radius: 20px;
+     margin: 5px;
+     width: 100%;
+     padding-left: 15px;
+     border: 0;
+     background-color: transparent;
+     padding: 15px 5%;
+     justify-self:center;
+     margin-top: 0;
+     cursor: pointer;
+}
+.Search-coment button{
+    background: transparent;
+    border: 0;
+    margin-right: 15px;
+    cursor: pointer;
+}
+.Search-coment img{
+    border-radius: 50%;
+}
+.Search-coment input{
+    
+    width: 430px;
+    border-radius: 20px;
+    border: 0;
+    background: #f0f2f5;
+    height: 40px;
+    cursor: pointer;
+}
+.friend-request{
+    height: 380px;
+    width: 100%;
+    background: white;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+}
+.friend-request-head{
+    display: flex;
+    width: 90%;
+    height: 10%;
+    padding: 20px;
+    justify-content: space-between;
+    padding-bottom: 0;
+}
+.friend-request-head h3{
+  font-weight: bold;
+  font-size: 17px;
+  color: rgb(61, 60, 60);
+}
+.friend-request-content{
+    display: flex;
+    width: 100%;
+    height:90% ;
+    justify-content: center;
+    justify-content: space-around;
+}
+.friend-request-sub2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+.friend-request-img img{
+    border-radius: 10px;
+}
+.friend-request-name{
+    margin-top: 10px;
+    cursor: pointer;
+}
+.friend-request-name:hover{
+  text-decoration: underline;
+}
+.friend-request-img img{
+    height: 180px;
+    width: 60;
+}
+.friend-request-btn{
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.friend-request-btn button{
+    display: flex;
+    background: rgb(213, 213, 243);
+    block-size: 100%;
+    border: 0;
+    color: rgb(18, 99, 250);
+    padding: 10px;
+    font-weight: bold;
+    align-items: center;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.friend-request-btn button img{
+    height: 20px;
+    width: 20px;
+    margin-right: 3px;
+    
+}
+.friend-request-btn button:hover{
+    opacity: 0.5;
+}
+.friend-request-p{
+    display: flex;
+    margin-top: 10px;
+    align-items: center;
+}
+.friend-request-sub2 p img{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+}
+
+
+
